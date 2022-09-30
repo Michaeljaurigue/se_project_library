@@ -3,7 +3,8 @@
 .page {
   min-width: 1100px;
   max-width: 1600px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -22,7 +23,7 @@
 
 .nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   column-gap: 20px;
 
   /* Add flex properties here */
@@ -48,6 +49,9 @@
   font-weight: bold;
 }
 
+.nav__link:hover {
+  color: #1f69c9;
+}
 /* Add the hover state styles for .nav__link here */
 
 .header__title {
@@ -69,6 +73,9 @@
   /* Write styles here */
   z-index: 1;
   max-width: 636px;
+  position: absolute;
+  top: 135px;
+  right: 20px;
 }
 
 .header__footer {
@@ -88,6 +95,9 @@
   text-decoration: none;
 }
 
+.header__link:hover {
+  color: #1f69c9;
+}
 /* Add the hover state styles for .header__link here */
 
 .header__address {
@@ -117,6 +127,18 @@
 }
 
 /* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
+
+.staff__list {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  list-style: none;
+}
 
 .card {
   background-color: #fff;
@@ -231,12 +253,16 @@
 }
 
 /* Add the hover state styles for .events__more here */
+.events__more:hover {
+  color: #1f69c9;
+}
 
 .events__cover {
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 780px;
   max-width: 780px;
+  position: relative;
 }
 
 .events__image {
@@ -253,9 +279,8 @@
 
 .person_name_feynman {
   /* Use correct values of top/right/bottom/left properties to position the element */
-  bottom: 319px;
-  right: 50px;
-  left: 50px;
+  top: -30px;
+  left: 319px;
 }
 
 .person_name_burbidge {
@@ -323,10 +348,16 @@
   list-style-type: none;
   padding: 0;
   margin: 100px 0 0;
-  /* Add styles */
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: space-between;
+  gap: 40px;
 }
 
 .step {
+  flex-basis: 220px;
+  flex-wrap: wrap;
   /* Add styles */
 }
 
@@ -354,6 +385,7 @@
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  z-index: 0;
 }
 
 .about__title {
@@ -370,10 +402,13 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
 }
 
 .about__paragraph {
-  margin: 0;
+  margin: 32px;
 }
 
 .about__circle {
@@ -381,22 +416,49 @@
   width: 495px;
   height: 495px;
   border-radius: 50%;
+  z-index: -1;
+  position: absolute;
+  top: -121px;
+  left: -91px;
 }
 
 .footer {
   box-sizing: border-box;
+  background-color: #1f1f1f;
+  min-height: 224px;
+  position: relative;
 }
 
 .footer__columns {
+  display: flex;
+  /* justify-content: space-around; */
+  /* align-items: flex-start; */
+  /* flex-direction: row; */
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 80px;
+  padding-right: 80px;
+  column-gap: 100px;
 }
 
 .footer__column_content_hours {
+  flex-grow: 1;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__column_content_social {
+  flex-grow: 1;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__logo {
+  flex-grow: 6;
+  width: 116px;
+  height: 21px;
 }
 
 .footer__list {
@@ -407,9 +469,14 @@
 }
 
 .footer__list-item {
+  color: white;
+  margin-bottom: 16px;
+  margin-top: 20px;
+  /* margin-left: 10px; */
 }
 
 .footer__column-heading {
+  color: white;
 }
 
 .footer__column-link {
@@ -419,8 +486,19 @@
   text-decoration: none;
 }
 
+.footer__column-link:hover {
+  color: #c1c1c1;
+}
+
 .footer__social-icon {
+  width: 16px;
+  height: 16px;
 }
 
 .footer__copyright {
+  color: #ffffff;
+  display: flex;
+  align-items: baseline;
+  padding-bottom: 80px;
+  padding-left: 80px;
 }

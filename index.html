@@ -56,7 +56,7 @@
         <h2 class="staff__title">Staff picks</h2>
         <p class="staff__subtitle">That our readers love</p>
         <!-- The ul tag (unordered list) is used here as it is a collection of cards for which the order doesn't really matter. -->
-        <ul>
+        <ul class="staff__list">
           <li class="card">
             <div class="card__content">
               <h3 class="card__title">Introduction to Algorithms</h3>
@@ -129,35 +129,6 @@
 
       <section id="events" class="events">
         <div class="events__content">
-          <div class="events__cover">
-            <img src="/images/cafe.png" alt="events__image" class="events__image">
-
-
-            <div class="person person_name_feynman">
-              <p class="person__caption">Joan Feynman</p>
-              <img src="/images/person_feynman.png" class="person__image person__image_size_1" alt="Joan Feynman">
-            </div>
-            <div class="person person_name_burbidge">
-              <p class="person__caption">Margaret Burbidge</p>
-              <img src="/images/person_burbidge.png" class="person__image person__image_size_m" alt="Margaret Burbidge">
-            </div>
-
-            <div class="person person_name_cannon">
-              <p class="person__caption">Annie Jump Cannon</p>
-              <img src="/images/person_cannon.png" class="person__image person__image_size_m" alt="Annine Jump Cannon">
-            </div>
-
-            <div class="person person_name_mitchell">
-              <p class="person__caption">Maria Mitchell</p>
-              <img src="/images/person_mitchell.png" class="person__image person__image_size_s" alt="Maria Michell">
-            </div>
-
-            <div class="person person_name_tarter">
-              <p class="person__caption">Jill Tarter</p>
-              <img src="/images/person_tarter.png" class="person__image person__image_size_m" alt="Jill Tarter">
-            </div>
-
-          </div>
 
           <h2 class="events__heading">Upcoming events:</h2>
           <h3 class="events__title">
@@ -186,6 +157,36 @@
           </p>
           <a href="#" class="events__more">More events &rarr;</a>
         </div>
+        <div class="events__cover">
+          <img src="/images/cafe.png" alt="events__image" class="events__image">
+
+          <div class="person person_name_feynman">
+            <p class="person__caption">Joan Feynman</p>
+            <img src="/images/person_feynman.png" class="person__image person__image_size_l" alt="Joan Feynman">
+          </div>
+
+          <div class="person person_name_burbidge">
+            <p class="person__caption">Margaret Burbidge</p>
+            <img src="/images/person_burbidge.png" class="person__image person__image_size_m" alt="Margaret Burbidge">
+          </div>
+
+          <div class="person person_name_cannon">
+            <p class="person__caption">Annie Jump Cannon</p>
+            <img src="/images/person_cannon.png" class="person__image person__image_size_m" alt="Annine Jump Cannon">
+          </div>
+
+          <div class="person person_name_mitchell">
+            <p class="person__caption">Maria Mitchell</p>
+            <img src="/images/person_mitchell.png" class="person__image person__image_size_s" alt="Maria Michell">
+          </div>
+
+          <div class="person person_name_tarter">
+            <p class="person__caption">Jill Tarter</p>
+            <img src="/images/person_tarter.png" class="person__image person__image_size_m" alt="Jill Tarter">
+          </div>
+
+        </div>
+
         <!-- Start creating the composition here -->
       </section>
 
@@ -250,11 +251,47 @@
             the American Geophysical Union.
           </p>
         </div>
-        <!-- <div class="about__circle"></div> -->
+        <div class="about__circle"></div>
       </section>
 
       <footer id="footer" class="footer">
+
         <!-- The time to mark up the footer has come, you can do it 💪 -->
+        <div class="footer__columns">
+
+          <div class="footer__column footer__logo">
+            <img src="/images/logo_practicum.svg" class="footer__logo" alt="Practicum Logo">
+          </div>
+          <div class="footer__column footer__column_content_hours">
+            <p class="footer__column-heading">Hours</p>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <p>Weekends: 10am - 6pm</p>
+              </li>
+              <li class="footer__list-item">
+                <p>Weekends: 10am - 6pm</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__column footer__column_content_social">
+            <p class="footer__column-heading">Social Media</p>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <img src="/images/facebook_white.svg" alt="Facebook" class=".footer__social-icon"><a href="#"
+                  class="footer__column-link">&nbsp; Facebook</a>
+              </li>
+              <li class="footer__list-item">
+                <img src="/images/instagram_white.svg" alt="Instagram" class=".footer__social-icon"><a href="#"
+                  class="footer__column-link">&nbsp; Instagram</a>
+              </li>
+            </ul>
+
+          </div>
+
+
+        </div>
+        <p class="footer__copyright">&copy; 2022 Michael Jaurigue</p>
       </footer>
     </main>
   </div>
