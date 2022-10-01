@@ -138,6 +138,8 @@
   gap: 40px;
   list-style: none;
   margin-top: 68px;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .card {
@@ -406,6 +408,7 @@
 
 .about__paragraph {
   margin-bottom: 32px;
+  margin-top: 0;
 }
 
 .about__paragraph:last-of-type {
@@ -427,7 +430,7 @@
   box-sizing: border-box;
   background-color: #1f1f1f;
   color: #fff;
-  padding: 57px 102px 60px 80px;
+  padding: 60px 102px 60px 80px;
   /* position: relative; */
 }
 
@@ -439,8 +442,8 @@
   /* padding-top: 60px;
   padding-left: 80px;
   padding-right: 80px; */
-  /* column-gap: 100px;
-  min-height: 224px; */
+  /* column-gap: 100px; */
+  min-height: 224px;
 }
 
 .footer__column_content_hours {
@@ -483,6 +486,7 @@
 .footer__column-heading {
   margin: 0 0 20px;
   /* color: white; */
+  font-size: 16px;
 }
 
 .footer__column-link {
@@ -510,5 +514,5 @@
   align-items: baseline;
   padding-bottom: 80px;
   padding-left: 80px; */
-  margin: 108px 0 0;
+  /* margin: 108px 0 0; */
 }
